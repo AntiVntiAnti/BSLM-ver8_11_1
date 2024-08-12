@@ -16,13 +16,13 @@ def run_app():
     Raises:
         Exception: If an error occurs during the execution of the application.
     """
-    logger.info("ENTER BY PORTAL START YES!")
+    logger.debug("ENTER BY PORTAL START YES!")
     try:
         app = QApplication(sys.argv)
         # app.setStyleSheet(homie_stylesheet)
         window = MainWindow()
-        window.resize(300, 330)
         window.show()
+        window.resize(300, 330)
         sys.exit(app.exec())
     except (ValueError, TypeError) as e:
         logger.error(f"Value or Type error occurred {e}", exc_info=True)

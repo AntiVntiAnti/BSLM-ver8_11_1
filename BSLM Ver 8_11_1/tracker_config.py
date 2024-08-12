@@ -10,7 +10,7 @@ DATEFORMAT = '%d-%b-%y %I:%M:%S %p'  # this is how you want it from now on lolol
 FILE_MODE = 'w'
 # database
 # DB_NAME = 'theDBofTracksAugust8th.db'
-DB_NAME = 'dicksnoot.db'
+DB_NAME = 'theDBofTracksAugust8th.db'
 
 
 

@@ -35,7 +35,7 @@ class DataManager:
             
             if not self.db.open():
                 logger.error("Error: Unable to open database")
-            logger.info("DB INITIALIZING")
+            logger.debug("DB INITIALIZING")
             self.query = QSqlQuery()
             self.setup_tables()
         except Exception as e:
@@ -949,9 +949,9 @@ class DataManager:
 
 def close_database(self):
     try:
-        logger.info("if database is open")
+        logger.debug("if database is open")
         if self.db.isOpen():
-            logger.info("the database is closed successfully")
+            logger.debug("the database is closed successfully")
             self.db.close()
     except Exception as e:
         logger.exception(f"Error closing database: {e}")
